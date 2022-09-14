@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>976623005984-bif09d39vaf6i0rf9veqea53ako4cv92.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.976623005984-bif09d39vaf6i0rf9veqea53ako4cv92</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAW72aUZboywbDahRHUt9R0W-ND7PBC6k4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>976623005984</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.octalwise.TodoBox.watchkitapp.watchkitextension</string>
+	<key>PROJECT_ID</key>
+	<string>todobox-firebase</string>
+	<key>STORAGE_BUCKET</key>
+	<string>todobox-firebase.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:976623005984:ios:57c98caadb1240f3272745</string>
+</dict>
+</plist>

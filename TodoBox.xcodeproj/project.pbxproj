@@ -1,0 +1,924 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C0616DC279DBF930026D87B /* TodoBox.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6C0616DB279DBF930026D87B /* TodoBox.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6C0616E1279DBF950026D87B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C0616E0279DBF950026D87B /* Assets.xcassets */; };
+		6C0616E7279DBF950026D87B /* TodoBox WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C0616E6279DBF950026D87B /* TodoBox WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6C0616EC279DBF950026D87B /* TodoBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0616EB279DBF950026D87B /* TodoBoxApp.swift */; };
+		6C0616F0279DBF950026D87B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0616EF279DBF950026D87B /* NotificationController.swift */; };
+		6C0616F2279DBF950026D87B /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0616F1279DBF950026D87B /* NotificationView.swift */; };
+		6C0616F4279DBF950026D87B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0616F3279DBF950026D87B /* ComplicationController.swift */; };
+		6C0616F6279DBF960026D87B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C0616F5279DBF960026D87B /* Assets.xcassets */; };
+		6C0616F9279DBF960026D87B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C0616F8279DBF960026D87B /* Preview Assets.xcassets */; };
+		6C061705279DBF960026D87B /* TodoBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C061704279DBF960026D87B /* TodoBoxTests.swift */; };
+		6C06170F279DBF960026D87B /* TodoBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C06170E279DBF960026D87B /* TodoBoxUITests.swift */; };
+		6C061711279DBF960026D87B /* TodoBoxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C061710279DBF960026D87B /* TodoBoxUITestsLaunchTests.swift */; };
+		6C061732279DBFF00026D87B /* SectionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C061726279DBFEF0026D87B /* SectionsList.swift */; };
+		6C061733279DBFF00026D87B /* SectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C061727279DBFEF0026D87B /* SectionRow.swift */; };
+		6C061734279DBFF00026D87B /* SectionRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C061728279DBFEF0026D87B /* SectionRequests.swift */; };
+		6C061736279DBFF00026D87B /* Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C06172A279DBFEF0026D87B /* Structures.swift */; };
+		6C061737279DBFF00026D87B /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C06172B279DBFEF0026D87B /* Mocks.swift */; };
+		6C061738279DBFF00026D87B /* TaskRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C06172D279DBFEF0026D87B /* TaskRequests.swift */; };
+		6C061739279DBFF00026D87B /* TasksList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C06172E279DBFEF0026D87B /* TasksList.swift */; };
+		6C06173A279DBFF00026D87B /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C06172F279DBFEF0026D87B /* TaskRow.swift */; };
+		6C06173B279DBFF00026D87B /* TaskDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C061730279DBFEF0026D87B /* TaskDetail.swift */; };
+		6C06173C279DBFF00026D87B /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C061731279DBFEF0026D87B /* LoginForm.swift */; };
+		6C06173E279DC0180026D87B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C06173D279DC0180026D87B /* ContentView.swift */; };
+		6C061741279DC05D0026D87B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6C061740279DC05D0026D87B /* FirebaseAuth */; };
+		6C061749279DC1EF0026D87B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C061748279DC1EF0026D87B /* GoogleService-Info.plist */; };
+		6C06174A279DC1EF0026D87B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C061748279DC1EF0026D87B /* GoogleService-Info.plist */; };
+		6C06174B279DC1EF0026D87B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C061748279DC1EF0026D87B /* GoogleService-Info.plist */; };
+		6C06174C279DC1EF0026D87B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C061748279DC1EF0026D87B /* GoogleService-Info.plist */; };
+		6C06174D279DC1EF0026D87B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C061748279DC1EF0026D87B /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C0616DD279DBF930026D87B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C0616D1279DBF930026D87B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C0616DA279DBF930026D87B;
+			remoteInfo = "TodoBox WatchKit App";
+		};
+		6C0616E8279DBF950026D87B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C0616D1279DBF930026D87B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C0616E5279DBF950026D87B;
+			remoteInfo = "TodoBox WatchKit Extension";
+		};
+		6C061701279DBF960026D87B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C0616D1279DBF930026D87B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C0616E5279DBF950026D87B;
+			remoteInfo = "TodoBox WatchKit Extension";
+		};
+		6C06170B279DBF960026D87B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C0616D1279DBF930026D87B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C0616DA279DBF930026D87B;
+			remoteInfo = "TodoBox WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6C061717279DBF960026D87B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6C0616E7279DBF950026D87B /* TodoBox WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C06171B279DBF960026D87B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6C0616DC279DBF930026D87B /* TodoBox.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6C0616D7279DBF930026D87B /* TodoBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C0616DB279DBF930026D87B /* TodoBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C0616E0279DBF950026D87B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C0616E6279DBF950026D87B /* TodoBox WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TodoBox WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C0616EB279DBF950026D87B /* TodoBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoBoxApp.swift; sourceTree = "<group>"; };
+		6C0616EF279DBF950026D87B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		6C0616F1279DBF950026D87B /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		6C0616F3279DBF950026D87B /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		6C0616F5279DBF960026D87B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C0616F8279DBF960026D87B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6C0616FA279DBF960026D87B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C0616FB279DBF960026D87B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		6C061700279DBF960026D87B /* TodoBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C061704279DBF960026D87B /* TodoBoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoBoxTests.swift; sourceTree = "<group>"; };
+		6C06170A279DBF960026D87B /* TodoBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C06170E279DBF960026D87B /* TodoBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoBoxUITests.swift; sourceTree = "<group>"; };
+		6C061710279DBF960026D87B /* TodoBoxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoBoxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6C061726279DBFEF0026D87B /* SectionsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsList.swift; sourceTree = "<group>"; };
+		6C061727279DBFEF0026D87B /* SectionRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionRow.swift; sourceTree = "<group>"; };
+		6C061728279DBFEF0026D87B /* SectionRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionRequests.swift; sourceTree = "<group>"; };
+		6C06172A279DBFEF0026D87B /* Structures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Structures.swift; sourceTree = "<group>"; };
+		6C06172B279DBFEF0026D87B /* Mocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		6C06172D279DBFEF0026D87B /* TaskRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRequests.swift; sourceTree = "<group>"; };
+		6C06172E279DBFEF0026D87B /* TasksList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksList.swift; sourceTree = "<group>"; };
+		6C06172F279DBFEF0026D87B /* TaskRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
+		6C061730279DBFEF0026D87B /* TaskDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetail.swift; sourceTree = "<group>"; };
+		6C061731279DBFEF0026D87B /* LoginForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
+		6C06173D279DC0180026D87B /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6C061748279DC1EF0026D87B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C0616E3279DBF950026D87B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C061741279DC05D0026D87B /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C0616FD279DBF960026D87B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C061707279DBF960026D87B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C0616D0279DBF930026D87B = {
+			isa = PBXGroup;
+			children = (
+				6C061748279DC1EF0026D87B /* GoogleService-Info.plist */,
+				6C0616DF279DBF930026D87B /* TodoBox WatchKit App */,
+				6C0616EA279DBF950026D87B /* TodoBox WatchKit Extension */,
+				6C061703279DBF960026D87B /* TodoBoxTests */,
+				6C06170D279DBF960026D87B /* TodoBoxUITests */,
+				6C0616D8279DBF930026D87B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C0616D8279DBF930026D87B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C0616D7279DBF930026D87B /* TodoBox.app */,
+				6C0616DB279DBF930026D87B /* TodoBox.app */,
+				6C0616E6279DBF950026D87B /* TodoBox WatchKit Extension.appex */,
+				6C061700279DBF960026D87B /* TodoBoxTests.xctest */,
+				6C06170A279DBF960026D87B /* TodoBoxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C0616DF279DBF930026D87B /* TodoBox WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				6C0616E0279DBF950026D87B /* Assets.xcassets */,
+			);
+			path = "TodoBox WatchKit App";
+			sourceTree = "<group>";
+		};
+		6C0616EA279DBF950026D87B /* TodoBox WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6C06173D279DC0180026D87B /* ContentView.swift */,
+				6C0616EB279DBF950026D87B /* TodoBoxApp.swift */,
+				6C061731279DBFEF0026D87B /* LoginForm.swift */,
+				6C06172C279DBFEF0026D87B /* Tasks */,
+				6C061725279DBFEF0026D87B /* Sections */,
+				6C06172A279DBFEF0026D87B /* Structures.swift */,
+				6C06172B279DBFEF0026D87B /* Mocks.swift */,
+				6C0616EF279DBF950026D87B /* NotificationController.swift */,
+				6C0616F1279DBF950026D87B /* NotificationView.swift */,
+				6C0616F3279DBF950026D87B /* ComplicationController.swift */,
+				6C0616F5279DBF960026D87B /* Assets.xcassets */,
+				6C0616FA279DBF960026D87B /* Info.plist */,
+				6C0616FB279DBF960026D87B /* PushNotificationPayload.apns */,
+				6C0616F7279DBF960026D87B /* Preview Content */,
+			);
+			path = "TodoBox WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		6C0616F7279DBF960026D87B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6C0616F8279DBF960026D87B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6C061703279DBF960026D87B /* TodoBoxTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C061704279DBF960026D87B /* TodoBoxTests.swift */,
+			);
+			path = TodoBoxTests;
+			sourceTree = "<group>";
+		};
+		6C06170D279DBF960026D87B /* TodoBoxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6C06170E279DBF960026D87B /* TodoBoxUITests.swift */,
+				6C061710279DBF960026D87B /* TodoBoxUITestsLaunchTests.swift */,
+			);
+			path = TodoBoxUITests;
+			sourceTree = "<group>";
+		};
+		6C061725279DBFEF0026D87B /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				6C061726279DBFEF0026D87B /* SectionsList.swift */,
+				6C061727279DBFEF0026D87B /* SectionRow.swift */,
+				6C061728279DBFEF0026D87B /* SectionRequests.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		6C06172C279DBFEF0026D87B /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				6C06172D279DBFEF0026D87B /* TaskRequests.swift */,
+				6C06172E279DBFEF0026D87B /* TasksList.swift */,
+				6C06172F279DBFEF0026D87B /* TaskRow.swift */,
+				6C061730279DBFEF0026D87B /* TaskDetail.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C0616D6279DBF930026D87B /* TodoBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C06171C279DBF960026D87B /* Build configuration list for PBXNativeTarget "TodoBox" */;
+			buildPhases = (
+				6C0616D5279DBF930026D87B /* Resources */,
+				6C06171B279DBF960026D87B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C0616DE279DBF930026D87B /* PBXTargetDependency */,
+			);
+			name = TodoBox;
+			productName = TodoBox;
+			productReference = 6C0616D7279DBF930026D87B /* TodoBox.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		6C0616DA279DBF930026D87B /* TodoBox WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C061718279DBF960026D87B /* Build configuration list for PBXNativeTarget "TodoBox WatchKit App" */;
+			buildPhases = (
+				6C0616D9279DBF930026D87B /* Resources */,
+				6C061717279DBF960026D87B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C0616E9279DBF950026D87B /* PBXTargetDependency */,
+			);
+			name = "TodoBox WatchKit App";
+			productName = "TodoBox WatchKit App";
+			productReference = 6C0616DB279DBF930026D87B /* TodoBox.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6C0616E5279DBF950026D87B /* TodoBox WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C061714279DBF960026D87B /* Build configuration list for PBXNativeTarget "TodoBox WatchKit Extension" */;
+			buildPhases = (
+				6C0616E2279DBF950026D87B /* Sources */,
+				6C0616E3279DBF950026D87B /* Frameworks */,
+				6C0616E4279DBF950026D87B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TodoBox WatchKit Extension";
+			packageProductDependencies = (
+				6C061740279DC05D0026D87B /* FirebaseAuth */,
+			);
+			productName = "TodoBox WatchKit Extension";
+			productReference = 6C0616E6279DBF950026D87B /* TodoBox WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		6C0616FF279DBF960026D87B /* TodoBoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C06171F279DBF960026D87B /* Build configuration list for PBXNativeTarget "TodoBoxTests" */;
+			buildPhases = (
+				6C0616FC279DBF960026D87B /* Sources */,
+				6C0616FD279DBF960026D87B /* Frameworks */,
+				6C0616FE279DBF960026D87B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C061702279DBF960026D87B /* PBXTargetDependency */,
+			);
+			name = TodoBoxTests;
+			productName = TodoBoxTests;
+			productReference = 6C061700279DBF960026D87B /* TodoBoxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6C061709279DBF960026D87B /* TodoBoxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C061722279DBF960026D87B /* Build configuration list for PBXNativeTarget "TodoBoxUITests" */;
+			buildPhases = (
+				6C061706279DBF960026D87B /* Sources */,
+				6C061707279DBF960026D87B /* Frameworks */,
+				6C061708279DBF960026D87B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C06170C279DBF960026D87B /* PBXTargetDependency */,
+			);
+			name = TodoBoxUITests;
+			productName = TodoBoxUITests;
+			productReference = 6C06170A279DBF960026D87B /* TodoBoxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C0616D1279DBF930026D87B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					6C0616D6279DBF930026D87B = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					6C0616DA279DBF930026D87B = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					6C0616E5279DBF950026D87B = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					6C0616FF279DBF960026D87B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 6C0616E5279DBF950026D87B;
+					};
+					6C061709279DBF960026D87B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 6C0616DA279DBF930026D87B;
+					};
+				};
+			};
+			buildConfigurationList = 6C0616D4279DBF930026D87B /* Build configuration list for PBXProject "TodoBox" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C0616D0279DBF930026D87B;
+			packageReferences = (
+				6C06173F279DC05D0026D87B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 6C0616D8279DBF930026D87B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C0616D6279DBF930026D87B /* TodoBox */,
+				6C0616DA279DBF930026D87B /* TodoBox WatchKit App */,
+				6C0616E5279DBF950026D87B /* TodoBox WatchKit Extension */,
+				6C0616FF279DBF960026D87B /* TodoBoxTests */,
+				6C061709279DBF960026D87B /* TodoBoxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C0616D5279DBF930026D87B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C061749279DC1EF0026D87B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C0616D9279DBF930026D87B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C0616E1279DBF950026D87B /* Assets.xcassets in Resources */,
+				6C06174A279DC1EF0026D87B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C0616E4279DBF950026D87B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C0616F9279DBF960026D87B /* Preview Assets.xcassets in Resources */,
+				6C0616F6279DBF960026D87B /* Assets.xcassets in Resources */,
+				6C06174B279DC1EF0026D87B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C0616FE279DBF960026D87B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C06174C279DC1EF0026D87B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C061708279DBF960026D87B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C06174D279DC1EF0026D87B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C0616E2279DBF950026D87B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C0616F0279DBF950026D87B /* NotificationController.swift in Sources */,
+				6C06173B279DBFF00026D87B /* TaskDetail.swift in Sources */,
+				6C061734279DBFF00026D87B /* SectionRequests.swift in Sources */,
+				6C061739279DBFF00026D87B /* TasksList.swift in Sources */,
+				6C0616F4279DBF950026D87B /* ComplicationController.swift in Sources */,
+				6C06173A279DBFF00026D87B /* TaskRow.swift in Sources */,
+				6C06173C279DBFF00026D87B /* LoginForm.swift in Sources */,
+				6C061737279DBFF00026D87B /* Mocks.swift in Sources */,
+				6C061733279DBFF00026D87B /* SectionRow.swift in Sources */,
+				6C061736279DBFF00026D87B /* Structures.swift in Sources */,
+				6C061738279DBFF00026D87B /* TaskRequests.swift in Sources */,
+				6C06173E279DC0180026D87B /* ContentView.swift in Sources */,
+				6C0616EC279DBF950026D87B /* TodoBoxApp.swift in Sources */,
+				6C0616F2279DBF950026D87B /* NotificationView.swift in Sources */,
+				6C061732279DBFF00026D87B /* SectionsList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C0616FC279DBF960026D87B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C061705279DBF960026D87B /* TodoBoxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C061706279DBF960026D87B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C061711279DBF960026D87B /* TodoBoxUITestsLaunchTests.swift in Sources */,
+				6C06170F279DBF960026D87B /* TodoBoxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C0616DE279DBF930026D87B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C0616DA279DBF930026D87B /* TodoBox WatchKit App */;
+			targetProxy = 6C0616DD279DBF930026D87B /* PBXContainerItemProxy */;
+		};
+		6C0616E9279DBF950026D87B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C0616E5279DBF950026D87B /* TodoBox WatchKit Extension */;
+			targetProxy = 6C0616E8279DBF950026D87B /* PBXContainerItemProxy */;
+		};
+		6C061702279DBF960026D87B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C0616E5279DBF950026D87B /* TodoBox WatchKit Extension */;
+			targetProxy = 6C061701279DBF960026D87B /* PBXContainerItemProxy */;
+		};
+		6C06170C279DBF960026D87B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C0616DA279DBF930026D87B /* TodoBox WatchKit App */;
+			targetProxy = 6C06170B279DBF960026D87B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6C061712279DBF960026D87B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6C061713279DBF960026D87B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C061715279DBF960026D87B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TodoBox WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 6RDDMYT83V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TodoBox WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = TodoBox;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = TodoBox_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.TodoBox.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		6C061716279DBF960026D87B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TodoBox WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 6RDDMYT83V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TodoBox WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = TodoBox;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = TodoBox_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.TodoBox.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		6C061719279DBF960026D87B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6RDDMYT83V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = TodoBox_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.TodoBox.watchkitapp;
+				PRODUCT_NAME = TodoBox;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		6C06171A279DBF960026D87B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6RDDMYT83V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = TodoBox_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.TodoBox.watchkitapp;
+				PRODUCT_NAME = TodoBox;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		6C06171D279DBF960026D87B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6RDDMYT83V;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.TodoBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6C06171E279DBF960026D87B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6RDDMYT83V;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.TodoBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6C061720279DBF960026D87B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6RDDMYT83V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.TodoBoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoBox WatchKit Extension.appex/TodoBox WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		6C061721279DBF960026D87B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6RDDMYT83V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.TodoBoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoBox WatchKit Extension.appex/TodoBox WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		6C061723279DBF960026D87B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6RDDMYT83V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.TodoBoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "TodoBox WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		6C061724279DBF960026D87B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6RDDMYT83V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.TodoBoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "TodoBox WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C0616D4279DBF930026D87B /* Build configuration list for PBXProject "TodoBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C061712279DBF960026D87B /* Debug */,
+				6C061713279DBF960026D87B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C061714279DBF960026D87B /* Build configuration list for PBXNativeTarget "TodoBox WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C061715279DBF960026D87B /* Debug */,
+				6C061716279DBF960026D87B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C061718279DBF960026D87B /* Build configuration list for PBXNativeTarget "TodoBox WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C061719279DBF960026D87B /* Debug */,
+				6C06171A279DBF960026D87B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C06171C279DBF960026D87B /* Build configuration list for PBXNativeTarget "TodoBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C06171D279DBF960026D87B /* Debug */,
+				6C06171E279DBF960026D87B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C06171F279DBF960026D87B /* Build configuration list for PBXNativeTarget "TodoBoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C061720279DBF960026D87B /* Debug */,
+				6C061721279DBF960026D87B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C061722279DBF960026D87B /* Build configuration list for PBXNativeTarget "TodoBoxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C061723279DBF960026D87B /* Debug */,
+				6C061724279DBF960026D87B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6C06173F279DC05D0026D87B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6C061740279DC05D0026D87B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C06173F279DC05D0026D87B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6C0616D1279DBF930026D87B /* Project object */;
+}
